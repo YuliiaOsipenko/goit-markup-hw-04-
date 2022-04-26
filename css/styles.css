@@ -89,7 +89,7 @@ body {
     color: var(--title-color);
     
 }
-.about, .portfolio-list, .team-list, .footer, .footer-list, .site-nav, .auth-nav, .menu-list, .projects-list {
+.about, .portfolio-list, .social-list, .team-list, .footer, .footer-list, .site-nav, .auth-nav, .menu-list, .projects-list {
     list-style: none;
    
 }
@@ -142,9 +142,11 @@ body {
 /* end header*/
 /* start hero*/
 .hero {
-    background-color: var(--hero-bgc);
+    background-color: #C4C4C4;
     padding-top: 200px;
     padding-bottom: 200px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)),url(../img/hero.jpg);
+
     
     
     
@@ -200,6 +202,12 @@ body {
     display: flex;
     
         
+}
+.about-icon{
+    background: #F5F4FA;
+    border-radius: 4px;
+    margin-right: 30px;
+    margin-bottom: 30px;
 }
 .about-title{
     color: var(--title-color);
@@ -311,9 +319,39 @@ body {
     padding-top: 10px;
     margin-bottom: 0px;
     margin-top: 0px;
+}
+
+.social-list{
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+    padding-left: 32px;
+    padding-right: 30px;
     
     
 }
+.social-list-link:nth-child(4n){
+    margin-right: 0px;
+} 
+.social-list-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(142, 142, 142);
+    width: 44px;
+    height: 44px;
+    border-radius:50%;
+    margin-right: 10px;
+}
+
+.social-list-link:hover, .social-list-link:focus {
+    background-color:  var(--accent-color);
+}
+.social-list-icon:hover, .social-list-icon:focus {
+    background-color: var(--primary-bgc);
+}
+
+
 /* end team*/
 /* start footer*/
 
