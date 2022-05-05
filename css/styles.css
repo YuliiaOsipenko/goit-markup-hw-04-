@@ -89,7 +89,7 @@ body {
     color: var(--title-color);
     
 }
-.about, .portfolio-list, .social-list, .team-list, .footer, .footer-list, .site-nav, .auth-nav, .menu-list, .projects-list {
+.about, .portfolio-list, .clients-list, .social-list, .team-list, .footer, .footer-list, .site-nav, .auth-nav, .menu-list, .projects-list {
     list-style: none;
    
 }
@@ -352,6 +352,23 @@ body {
 
 
 /* end team*/
+
+/* start clients*/
+.clients {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+.clients-title {
+    color: var(--title-color);
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+/* ens clients*/
+
 /* start footer*/
 
 .container-footer {
