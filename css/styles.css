@@ -89,7 +89,7 @@ body {
     color: var(--title-color);
     
 }
-.about, .portfolio-list, .clients-list, .social-list, .team-list, .footer, .footer-list, .site-nav, .auth-nav, .menu-list, .projects-list {
+.about, .portfolio-list, .clients-list, .social-list, .team-list, .footer, .footer-social, .footer-list, .site-nav, .auth-nav, .menu-list, .projects-list {
     list-style: none;
    
 }
@@ -135,8 +135,26 @@ body {
 .auth-nav .item + .item {
     margin-left: 50px;
 }
+
 .contacts-header:hover, .contacts-header:focus {
     color: var(--accent-color);
+    fill:#2196F3;
+}
+.auth-nav .item {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+}
+
+.mail, .phone {
+    margin-right: 10px;
+}
+.mail:hover, .mail:focus {
+    fill:var(--accent-color);
+}
+.phone:hover, .phone:focus {
+    fill:var(--accent-color);
 }
 /* end header*/
 /* start hero*/
@@ -177,10 +195,11 @@ body {
     background: #2196F3;
     margin: auto;
     height: 50px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     padding: 10px 32px 10px 32px;
     display: block;
     margin: auto;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    
     
 }
 
@@ -202,11 +221,22 @@ body {
     
         
 }
+.about-image{
+    padding: 25px 100px 25px 100px;
+    background: #F5F4FA;
+    border-radius: 4px;
+    
+} 
+.about-item {
+    margin-right: 30px;
+}
+.about-item:nth-child(4n){
+    margin-right: 0px;
+}
 .about-icon{
     background: #F5F4FA;
     border-radius: 4px;
-    margin-right: 30px;
-    margin-bottom: 30px;
+    
 }
 .about-title{
     color: var(--title-color);
@@ -214,7 +244,7 @@ body {
     font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
-    margin-top: 0px;
+    margin-top: 30px;
     margin-bottom: 0px;
     margin-right: 30px;
     
@@ -329,25 +359,29 @@ body {
     
     
 }
-.social-list-link:nth-child(4n){
+.social-list-item {
+    margin-right: 10px;
+}
+.social-list-item:nth-child(4n){
     margin-right: 0px;
-} 
+}
+
 .social-list-link{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(142, 142, 142);
     width: 44px;
     height: 44px;
     border-radius:50%;
-    margin-right: 10px;
+    fill:var(--primary-bgc);
+    
 }
 
 .social-list-link:hover, .social-list-link:focus {
     background-color:  var(--accent-color);
 }
 .social-list-icon:hover, .social-list-icon:focus {
-    background-color: var(--primary-bgc);
+   fill:var(--primary-bgc);
 }
 
 
@@ -367,21 +401,63 @@ body {
     margin-top: 0px;
     margin-bottom: 0px;
 }
+.clients-list{
+    display: flex;
+    justify-content: center;
+    padding-left: 0px;
+    margin-top: 50px;
+    margin-bottom: 0px;
+    
+}
+.clients-div{
+    padding: 16px 32px;
+    background-color: var(--primary-bgc);
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    }
+.clients-div:hover, .clients-div:focus{
+    border: 1px solid #2196F3;
+    border-radius: 4px;
+    display: block;
+}
+.clients-item {
+    margin-right: 30px;
+}
+.clients-item:nth-child(last-child) {
+    margin-right: 0px;
+}
+.clients-link {
+    fill: #AFB1B8;
+}
+.clients-link:hover, .clients-link:focus {
+    display: block;
+    fill: var(--accent-color);
+}
 /* ens clients*/
 
 /* start footer*/
-
-.container-footer {
-    padding-top: 60px;
-    padding-bottom: 60px;
+.footer-adress {
+    margin-right: 70px;
+    
   
+}
+.footer-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+    
 }
 .footer {
     background-color: var(--hero-bgc);
     padding-top: 60px;
     padding-bottom: 60px;
+    
+  
+   
        
 }
+
 .footer-list{
     padding-left: 0px;
     margin-top: 20px;
@@ -429,6 +505,41 @@ body {
 .footer-item{
     margin-top: 9px;
 }
+.footer-title {
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color: var(--special-title-color);
+margin-top: 0px;
+margin-bottom: 20px;
+}
+.footer-social-links {
+    
+}
+.footer-social-list {
+    display: flex;
+    padding-left: 0px;
+      
+
+}
+
+.footer-social-item {
+    background-color: rgba(255, 255, 255, 0.1);
+    width: 44px;
+    height: 44px;
+    border-radius:50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}
+.footer-social-item:hover, .footer-social-item:focus {
+    background-color: var(--accent-color);
+}
+
 /* end footer*/
 /*КОНЕЦ ГЛАВНОЙ СТРАНИЦЫ*/
 
@@ -535,6 +646,7 @@ body {
 .projects-foto:nth-child(3n){
     margin-right: 0px;
 }
+
 
 /* end projects*/
 /* END PORTFOLIO*/
