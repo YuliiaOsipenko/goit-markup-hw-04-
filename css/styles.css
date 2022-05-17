@@ -126,6 +126,10 @@ body {
     letter-spacing: 0.02em;
     margin: 0; 
     text-decoration: none;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
           
 }
 .auth-nav {
@@ -135,29 +139,26 @@ body {
 .auth-nav .item + .item {
     margin-left: 50px;
 }
-
 .contacts-header:hover, .contacts-header:focus {
-    color: var(--accent-color);
+    color:#2196F3;
+}
+.contacts-header:hover .phone,
+.contacts-header:focus .phone{
+    
+    fill:#2196F3;
+}
+.contacts-header:hover .mail,
+.contacts-header:focus .mail{
+    
     fill:#2196F3;
 }
 
-.contacts-header{
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: center;
-    align-items: center;
-}
 
 .mail, .phone {
     margin-right: 10px;
     fill: #757575;
 }
-.mail:hover, .mail:focus {
-    fill:var(--accent-color);
-}
-.phone:hover, .phone:focus {
-    fill:var(--accent-color);
-}
+
 /* end header*/
 /* start hero*/
 .hero {
@@ -393,6 +394,12 @@ body {
     fill: #AFB1B8;
 }
 
+.social-list-link:hover .social-list-icon,
+.social-list-link:focus .social-list-icon {
+    background-color: var(--accent-color);
+    fill: var(--primary-bgc);
+    
+}
 /* end team*/
 
 /* start clients*/
