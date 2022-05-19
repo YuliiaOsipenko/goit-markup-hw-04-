@@ -432,7 +432,7 @@ body {
     height: 90px;
     
 }
-.clients-item:nth-child(last-child) {
+.clients-item:last-child {
     margin-right: 0px;
 }
 .clients-link {
@@ -567,8 +567,10 @@ margin-bottom: 20px;
 .footer-social-item:last-child {
     margin-right: 0px;
 }
-.footer-social-item:hover, .footer-social-item:focus {
+.footer-social-link:hover, 
+.footer-social-link:focus  {
     background-color: var(--accent-color);
+    border-radius:50%;
 }
 
 /* end footer*/
