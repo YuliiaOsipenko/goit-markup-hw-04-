@@ -118,7 +118,16 @@ body {
     text-decoration: none;
     
 }
-
+.site-link-acent {
+    color: var(--accent-color);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    display: block;
+}
 .contacts-header {
     color: #757575;
     font-weight: 500;
@@ -233,13 +242,13 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 270px;
     height: 120px;
 
     
 } 
 .about-item {
     margin-right: 30px;
+    width: 270px;
 }
 .about-item:nth-child(4n){
     margin-right: 0px;
